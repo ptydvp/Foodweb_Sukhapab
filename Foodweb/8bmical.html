@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMI Calculator</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Font awesome -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
+  <!-- Fancybox slider -->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+  <!-- Theme color -->
+  <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+  <!-- Main style sheet -->
+  <link href="style.css" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+  .row {
+    margin: auto;
+  }
+
+
+
+  #mu-blog-banner {
+    background-image: url("https://waymagazine.org/wp-content/uploads/2016/04/Various_grains.jpg")
+  }
+
+  body {
+    color: black;
+  }
+
+  .row {
+    margin: auto;
+  }
+
+  .img {
+    display: block;
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    border-radius: 10%;
+
+  }
+
+  #mu-error {
+    background-image: url("bgcar.jpg");
+    width: 100%;
+    padding: 100px 0;
+    min-height: 500px;
+    display: block;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #bord {
+    background-image: url("bgg.png");
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: block;
+  }
+
+  .img2 {
+    display: block;
+    height: 50%;
+    width: 50%;
+    border-radius: 10%;
+    -moz-box-shadow: 10px 10px 5px #888888;
+    /* Old Firefox */
+    box-shadow: 10px 10px 5px #888888;
+  }
+
+  .col-md-12 {
+    background: rgb(255, 255, 255, 0.1);
+  }
+
+  strong {
+    color: red;
+  }
+
+  #successMessage {
+    display: block;
+    position: fixed;
+    left: 25%;
+    top: 20%;
+    width: 50%;
+    height: 500px;
+    z-index: 100;
+    background: #fcf8e3;
+    border: 10px solid tomato;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 20px;
+  }
+
+
+  #imgbmi {
+    width: 100%;
+    height: 70%;
+    display: block;
+    background-image: url("ex.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+  }
+
+  #calBMI {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  input {
+    width: 20%;
+  }
+
+  #button {
+    display: block;
+    width: 20%;
+    height: 30px;
+    background-color: #ffb1b1;
+    border: 2px solid rgb(0, 0, 0);
+    -moz-box-shadow: 1px 1px 2px #888888;
+    /* Old Firefox */
+    box-shadow: 1px 1px 2px #888888;
+    border-radius: 5px;
+  }
+  h2,h3{
+    text-align: center;
+  }
+  h3{
+    font-size: 50px;
+  }
+  #button:hover {
+    display: block;
+    background-color: rgb(21, 255, 0);
+    width: 25%;
+    border: 2px solid rgb(0, 0, 0);
+    -moz-box-shadow: 1px 1px 1px #888888;
+    /* Old Firefox */
+    box-shadow: 1px 1px 2px #888888;
+  }
+
+  table {
+    width: 100%;
+
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+  }
+
+  table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  table#t01 th {
+    background-color: black;
+    color: white;
+  }
+
+  #table {
+    display: block;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  #nextto {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: hotpink;
+
+  }
+</style>
+
+<body>
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="mu-preloader">
+      <img src="https://media.giphy.com/media/l3aMGM9Ez3ZzeCJIn5/giphy.gif" alt=" loader img">
+    </div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#">
+    <i class="fa fa-angle-up"></i>
+    <span>Top</span>
+  </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="mu-header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                href="blog-archive.html">NUTRITION<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="2Protein.html">Protein</a></li>
+                <li><a href="3Carbohydrate.html">Carbohydrate</a></li>
+                <li><a href="4Fibre.html">Fibre</a></li>
+                <li><a href="5Vitamin_and_Mineral.html">Vitamin&Mineral</a></li>
+                <li><a href="6Fat.html">FAT</a></li>
+                <li><a href="7BMI.html">BMI</a></li>
+                <li><a href="8bmical.html">BMI Calculator</a></li>
+                <li><a href="9whatiscalories.html">Calories</a></li>
+                <li><a href="10calories_table.html">Calories Table</a></li>
+
+              </ul>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">EAT
+                HEALTHY<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="11Breakfast.html">Breakfast?</a></li>
+                <li><a href="12eatforhealth.html">Eat For Health?</a></li>
+                <li><a href="13sevenways.html">Bad Seven Ways?</a></li>
+                <li><a href="14exer.html">Exercise</a></li>
+                <li><a href="15positiveexer.html">Benefits Of Exercise</a></li>
+                <li><a href="16PosMedi.html">Benefits And Disadvantages Of Medicines</a></li>
+                <li><a href="17AA.html">Supplementary Food</a></li>
+                <li><a href="18Junkfood.html">Junk Food</a></li>
+                <li><a href="19Water.html">Water</a></li>
+                <li><a href="20sa.html">Nutrition label</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+  <!-- End header section -->
+
+  <!-- Start Blog banner  -->
+  <section id="mu-blog-banner">
+    <div class="container">
+      <div class="mu-blog-banner-area">
+        <h2>โปรเเกรมคำนวนBMI</h2>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Blog banner -->
+
+
+  <section id="mu-error">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="main"></div><br>
+          <div id="table">
+            <table id="t01">
+              <tr>
+                <th>ค่าBMI</th>
+                <th>อยู่ในเกณท์</th>
+                <th>ภาวะเสี่ยงต่อโรค</th>
+              </tr>
+              <tr id="1">
+                <td>น้อยกว่า 18.50</td>
+                <td>น้ำหนักน้อย / ผอม</td>
+                <td>มากกว่าคนปกติ</td>
+              </tr>
+              <tr id="2">
+                <td>ระหว่าง 18.50 - 22.90</td>
+                <td>ปกติ (สุขภาพดี)</td>
+                <td>เท่าคนปกติ</td>
+              </tr>
+              <tr id="3">
+                <td>ระหว่าง 23 - 24.90</td>
+                <td>ท้วม / โรคอ้วนระดับ 1</td>
+                <td>มีความเสี่ยงที่จะอ้วน</td>
+              </tr>
+              <tr id="4">
+                <td>ระหว่าง 25 - 29.90</td>
+                <td>อ้วน / โรคอ้วนระดับ 2</td>
+                <td>อันตรายระดับ 1</td>
+              </tr>
+              <tr id="5">
+                <td>มากกว่า 30</td>
+                <td>อ้วนมาก / โรคอ้วนระดับ 3</td>
+                <td>อันตรายระดับ 2</td>
+              </tr>
+            </table>
+            <div id="detail"></div>
+          </div>
+          <div id="successMessage">
+            <div id="imgbmi">
+            </div>
+            <center>
+              <form id="calBMI" method="POST" action="">
+                <p>
+                  <label for="height">ส่วนสูง</label>
+                  <input type="number" id="height" name="height" placeholder="กรุณาใส่ส่วนสูง" required />
+                </p>
+                <p>
+                  <label for="weight">น้ำหนัก</label>
+                  <input type="number" id="weight" name="weight" placeholder="กรุณาใส่น้ำหนัก" required />
+                </p>
+                
+                <p><a id="button" onclick="submit()">คำนวน</a></p>
+              </form>
+            </center>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="container">
+          <div class="row">
+          </div>
+        </div>
+      </div>
+  </section>
+  <script>
+    function submit() {
+      $('#successMessage').hide();
+      $('#successMessage').animate({
+        width: '0px',
+        height: '0px',
+        magin: 'auto',
+        opacity: 1
+      });
+      cal = calculateBMI();
+      var main = document.getElementById("main")
+      var r1 = document.getElementById("1");
+      var r2 = document.getElementById("2");
+      var r3 = document.getElementById("3");
+      var r4 = document.getElementById("4");
+      var r5 = document.getElementById("5");
+      var detail = document.getElementById("detail");
+
+      var p = document.createElement("p");
+      var h3 = document.createElement("h3");
+      var h2 = document.createElement("h2");
+      if (cal < 18.5) {
+        cal = cal.toFixed(2);
+        var h2txt = document.createTextNode("ค่าBMIของคุณคือ : " + cal);
+        var h3txt = document.createTextNode(" น้ำหนักน้อยกว่ามาตรฐาน");
+        var ptxt = document.createTextNode("น้ำหนักน้อยกว่าปกติก็ไม่ค่อยดี หากคุณสูงมากแต่น้ำหนักน้อยเกินไป อาจเสี่ยงต่อการได้รับสารอาหารไม่เพียงพอหรือได้รับพลังงานไม่เพียงพอ ส่งผลให้ร่างกายอ่อนเพลียง่าย การรับประทานอาหารให้เพียงพอและออกกำลังกายแบบเวทเทรนนิ่งเพื่อเสริมสร้างกล้ามเนื้อ สามารถช่วยเพิ่มค่า BMI ให้อยู่ในเกณฑ์ปกติได้");
+        var img = document.createElement("img");
+        img.setAttribute("src", "b1.jpg");
+        img.setAttribute("class", "img");
+        r1.style.backgroundColor = "#00bfff"
+        h2.appendChild(h2txt);
+        h3.appendChild(h3txt);
+        p.appendChild(ptxt);
+        main.appendChild(h2);
+        detail.appendChild(h3);
+        detail.appendChild(img);
+        detail.appendChild(p);
+      }
+      else if (cal >= 18.5 && cal <= 22.90) {
+        cal = cal.toFixed(2);
+        var h2txt = document.createTextNode("ค่าBMIของคุณคือ : " + cal);
+        var h3txt = document.createTextNode("น้ำหนักปกติ");
+        var ptxt = document.createTextNode("น้ำหนักที่เหมาะสมสำหรับคนไทยคือค่า BMI ระหว่าง 18.5-22.9 จัดอยู่ในเกณฑ์ปกติ ห่างไกลโรคที่เกิดจากความอ้วน และมีความเสี่ยงต่อการเกิดโรคต่าง ๆ น้อยที่สุด ควรพยายามรักษาระดับค่า BMI ให้อยู่ในระดับนี้ให้นานที่สุด");
+        var img = document.createElement("img");
+        img.setAttribute("src", "b2.jpg");
+        img.setAttribute("class", "img");
+        r2.style.backgroundColor = "#66FF66"
+        h2.appendChild(h2txt);
+        h3.appendChild(h3txt);
+        p.appendChild(ptxt);
+        main.appendChild(h2);
+        detail.appendChild(h3);
+        detail.appendChild(img);
+        detail.appendChild(p);
+      }
+      else if (cal >= 23 && cal <= 24.90) {
+        cal = cal.toFixed(2);
+        var h2txt = document.createTextNode("ค่าBMIของคุณคือ : " + cal);
+        var h3txt = document.createTextNode("ท้วม / อ้วนระดับ 1");
+        var ptxt = document.createTextNode("พยายามอีกนิดเพื่อลดน้ำหนักให้เข้าสู่ค่ามาตรฐาน เพราะค่า BMI ในช่วงนี้ยังถือว่าเป็นกลุ่มผู้ที่มีความอ้วนอยู่บ้าง แม้จะไม่ถือว่าอ้วน แต่หากประวัติคนในครอบครัวเคยเป็นโรคเบาหวานและความดันโลหิตสูง ก็ถือว่ายังมีความเสี่ยงมากกว่าคนปกติ");
+        var img = document.createElement("img");
+        img.setAttribute("src", "b2.jpg");
+        img.setAttribute("class", "img");
+        r3.style.backgroundColor = "#FFFF33"
+        h2.appendChild(h2txt);
+        h3.appendChild(h3txt);
+        p.appendChild(ptxt);
+        main.appendChild(h2);
+        detail.appendChild(h3);
+        detail.appendChild(img);
+        detail.appendChild(p);
+
+      }
+      else if (cal >= 25 && cal <= 29.90) {
+        cal = cal.toFixed(2);
+        var h2txt = document.createTextNode("ค่าBMIของคุณคือ : " + cal);
+        var h3txt = document.createTextNode("อ้วน / อ้วนระดับ 2");
+        var ptxt = document.createTextNode("คุณอ้วนในระดับหนึ่งถึงแม้จะไม่ถึงเกณฑ์ที่ถือว่าอ้วนมาก ๆ แต่ก็ยังมีความเสี่ยงต่อการเกิดโรคที่มากับความอ้วนได้เช่นกัน ทั้งโรคเบาหวาน และความดันโลหิตสูง");
+        var img = document.createElement("img");
+        img.setAttribute("src", "b3.jpg");
+        img.setAttribute("class", "img");
+        r4.style.backgroundColor = "#FF9933"
+
+        h2.appendChild(h2txt);
+        h3.appendChild(h3txt);
+        p.appendChild(ptxt);
+        main.appendChild(h2);
+        detail.appendChild(h3);
+        detail.appendChild(img);
+        detail.appendChild(p);
+      }
+      else if (cal > 30) {
+        cal = cal.toFixed(2);
+        var h2txt = document.createTextNode("ค่าBMIของคุณคือ : " + cal);
+        var h3txt = document.createTextNode("อ้วนมาก / อ้วนระดับ 3");
+        var ptxt = document.createTextNode("ค่อนข้างอันตราย เพราะเข้าเกณฑ์อ้วนมาก เสี่ยงต่อการเกิดโรคร้ายแรงที่แฝงมากับความอ้วน หากค่า BMI อยู่ในระดับนี้ จะต้องระวังการรับประทานไขมัน และควรออกกำลังกายอย่างสม่ำเสมอ และหากเลขยิ่งสูงกว่า 40.0 ยิ่งแสดงถึงความอ้วนที่มากขึ้น");
+        var img = document.createElement("img");
+        img.setAttribute("src", "b4.jpg");
+        img.setAttribute("class", "img");
+        r5.style.backgroundColor = "#FF3333"
+        h2.appendChild(h2txt);
+        h3.appendChild(h3txt);
+        p.appendChild(ptxt);
+        main.appendChild(h2);
+        detail.appendChild(h3);
+        detail.appendChild(img);
+        detail.appendChild(p);
+      }
+    }
+    function calculateBMI() {
+      let we = document.forms['calBMI']['weight'].value;
+      let he = document.forms['calBMI']['height'].value;
+      let cal = we / ((he / 100) ** 2);
+
+      return cal;
+    }
+  </script>
+  <!-- Footer -->
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+    </div>
+    </div>
+  </footer>
+  <!-- / Footer -->
+
+
+  <!-- jQuery library -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+  <!-- Date Picker -->
+  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+
+  <!-- Custom js -->
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

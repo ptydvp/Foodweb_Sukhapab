@@ -1,0 +1,3535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CaloriesTable</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Font awesome -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
+  <!-- Fancybox slider -->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+  <!-- Theme color -->
+  <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+  <!-- Main style sheet -->
+  <link href="style.css" rel="stylesheet">
+
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+
+
+</head>
+<style>
+  .row {
+    margin: auto;
+  }
+
+
+
+  #mu-blog-banner {
+    background-image: url("calorie.jpg")
+  }
+
+  body {
+    color: black;
+  }
+
+  table, tr, td {
+    font-family: 'Athiti', "Open Sans", sans-serif;
+  }
+
+  .row {
+    margin: auto;
+  }
+
+  .img {
+    display: block;
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    border-radius: 10%;
+    -moz-box-shadow: 10px 10px 5px #888888;
+    /* Old Firefox */
+    box-shadow: 10px 10px 5px #888888;
+  }
+
+  #mu-error {
+    background-image: url("bgcar.jpg");
+    width: 100%;
+    padding: 100px 0;
+    min-height: 500px;
+    display: block;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #bord {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: block;
+  }
+
+  .img2 {
+    display: block;
+    height: 50%;
+    width: 50%;
+    border-radius: 10%;
+    -moz-box-shadow: 10px 10px 5px #888888;
+    /* Old Firefox */
+    box-shadow: 10px 10px 5px #888888;
+  }
+
+  .col-md-12 {
+    border: 1px solid black;
+    background: rgb(255, 255, 255, 0.1);
+  }
+
+  strong {
+    color: red;
+  }
+
+</style>
+
+<body>
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="mu-preloader">
+      <img src="assets/img/preloader.gif" alt=" loader img">
+    </div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#">
+    <i class="fa fa-angle-up"></i>
+    <span>Top</span>
+  </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="mu-header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                href="blog-archive.html">NUTRITION<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="2Protein.html">Protein</a></li>
+                <li><a href="3Carbohydrate.html">Carbohydrate</a></li>
+                <li><a href="4Fibre.html">Fibre</a></li>
+                <li><a href="5Vitamin_and_Mineral.html">Vitamin&Mineral</a></li>
+                <li><a href="6Fat.html">FAT</a></li>
+                <li><a href="7BMI.html">BMI</a></li>
+                <li><a href="8bmical.html">BMI Calculator</a></li>
+                <li><a href="9whatiscalories.html">Calories</a></li>
+                <li><a href="10calories_table.html">Calories Table</a></li>
+
+              </ul>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">EAT
+                HEALTHY<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="11Breakfast.html">Breakfast?</a></li>
+                <li><a href="12eatforhealth.html">Eat For Health?</a></li>
+                <li><a href="13sevenways.html">Bad Seven Ways?</a></li>
+                <li><a href="14exer.html">Exercise</a></li>
+                <li><a href="15positiveexer.html">Benefits Of Exercise</a></li>
+                <li><a href="16PosMedi.html">Benefits And Disadvantages Of Medicines</a></li>
+                <li><a href="17AA.html">Supplementary Food</a></li>
+                <li><a href="18Junkfood.html">Junk Food</a></li>
+                <li><a href="19Water.html">Water</a></li>
+                <li><a href="20sa.html">Nutrition label</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+  <!-- End header section -->
+
+  <!-- Start Blog banner  -->
+  <section id="mu-blog-banner">
+    <div class="container">
+      <div class="mu-blog-banner-area">
+        <h2>แคลอรี่ (Calories)</h2>
+      </div>
+    </div>
+  </section>
+  <!-- End Blog banner -->
+
+  <section id="mu-error">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+         <br> <h2 id="head">แคลอรี่ (Calories)</h2><br>
+          <table class="table">
+            <caption>ฐานข้อมูลล่าสุด : กันยายน 2559</caption>
+            <thead >
+              <tr>
+                <th class="pkt-left">ชื่อเมนูอาหาร<br class="uk-visible-small"><br>
+                  <span class="table-sum">(675 รายการ)</span></th>
+                <th class="tlh-table--right">ปริมาณ/หน่วย</th>
+                <th class="tlh-table--right"><span class="uk-hidden-small">ปริมาณ</span>แคลอรี่<br><br>
+                  <span class="uk-hidden-small">(kcal)</span></th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td class="pkt-left">ชื่อเมนูอาหาร</td>
+                <td>ปริมาณ/หน่วย</td>
+                <td><span class="uk-hidden-small">ปริมาณ</span>แคลอรี่</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr class="calorie-tr">
+                <td>กระเพาะปลา</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">150<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กระเพาะปลาตุ๋นน้ำแดง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">225<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยไข่</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">40<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยคลุกมะพร้าว</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยฉาบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">29<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยตาก</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">30<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยทอด (กล้วยแขก)</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">50<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยน้ำว้า</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">36<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยบวชชี</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">152<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยเล็บมือนาง</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">30<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยหอม</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">77<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กวยจั๊บ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กวยจั๊บญวณ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวแขก</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">380<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวคั่วไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">435<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวต้มยำกุ้ง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">320<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเนื้อเลียง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">370<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเนื้อสับ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">370<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวผัดกะเพราไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">440<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวผัดไทยใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">577<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวราดหน้าปลากะพง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">435<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเรือน้ำตก</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">180<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเรือน้ำตกแห้ง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">225<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นปลาน้ำ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">375<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นปลาแห้ง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">420<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นเล็กต้มยำหมู</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">335<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นเล็กหมูแห้ง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">330<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นหมี่น้ำลูกชิ้นเนื้อวัว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">226<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นหมี่ลูกชิ้นเนื้อ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">258<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นใหญ่ผัดซีอิ๊วใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">520<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นใหญ่ราดหน้าไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">397<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวเส้นใหญ่ราดหน้าหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">397<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ก๋วยเตี๋ยวหลอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">50<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กะละแม</td>
+                <td class="pkt-center">1 ห่อเล็ก</td>
+                <td class="pkt-right">65<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กะหรี่ปั๊บ</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">157<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุ้งแช่น้ำปลา</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">14<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุ้งทอดกระเทียมพริกไทย</td>
+                <td class="pkt-center">1 ตัวขนาดกลาง</td>
+                <td class="pkt-right">86<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุ้งนางนึ่งนมสด</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">185<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุ้งนึ่งกระเทียม</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">124<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุ้งผัดพริกอ่อน</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุ้งฝอยชุบแป้งทอด</td>
+                <td class="pkt-center">1 แพ</td>
+                <td class="pkt-right">308<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุ้งอบวุ้นเส้น</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุนเชียงทอด</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กุยช่ายทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">114<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เกาเหลาราดหน้า</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เกาเหลาลูกชิ้นน้ำ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">225<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เกี๊ยวกรอบราดหน้ากุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">635<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เกี๊ยวซ่า</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">63<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เกี๊ยวกุ้งน้ำ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">275<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เกี๊ยวปลาน้ำ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงกะหรี่ไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">450<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงกะหรี่หมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">325<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงขี้เหล็ก</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">195<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงขี้เหล็กหมูย่าง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">245<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเขียวหวานไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเขียวหวานปลาดุก</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเขียวหวานลูกชิ้นปลากราย</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเขียวหวานหมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดไข่เจียว</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดตำลึงหมูสับ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดเต้าหู้ไม่ใส่หมูสับ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดเต้าหู้ยัดไส้</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดถั่วงอกไม่ใส่หมูสับ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">50<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดถั่วงอกหมูสับ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">50<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดฟักยัดไส้</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดมะระยัดไส้</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดมะระยัดไส้หมูวุ้นเส้น</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">66<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงจืดวุ้นเส้น</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">85<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงไตปลา</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">50<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงป่าไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดไก่ใส่มะเขือ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดไก่ใส่หน่อไม้</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">245<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดเป็ดย่าง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดฟักทองใส่หมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดฟักทองหมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดมะเขือไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดลูกชิ้นปลา</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดหน่อไม้ไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">245<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเผ็ดหมูยอดมะพร้าว</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">245<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงมัสมั่นไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">325<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเลียง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">115<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเลียงผักรวม</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">48<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้ม</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">28<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้มชะอมไข่ทอดใส่กุ้ง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">270<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้มดอกแคกุ้ง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้มปลาช่อนผักบุ้ง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้มปลาแป๊ะซะ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">160<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้มผักกระเฉดปลา</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้มผักบุ้งปลาช่อน</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงส้มผักรวม</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงหมูเทโพ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเหลืองมะละกอกุ้ง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แกงเหลืองหน่อไม้ดองกับปลา</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แก้วมังกร</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โกยซีหมี่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">550<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไก่ KFC สะโพก</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">355<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไก่ KFC ฮอตวิง</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">78<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไก่ตุ๋นมะนาวดอง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไก่ทอด</td>
+                <td class="pkt-center">1 น่อง</td>
+                <td class="pkt-right">345<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไก่ผัดขิง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไก่ยอชุบแป้งทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">73<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไก่ย่าง</td>
+                <td class="pkt-center">1 น่อง</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมกรวย</td>
+                <td class="pkt-center">1 กรวย</td>
+                <td class="pkt-right">63<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมกล้วย</td>
+                <td class="pkt-center">1 ห่อ</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมกลีบลำดวน</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">23<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมกุยช่าย</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">53<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมเกลียว</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">25<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมขี้หนู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมเข่ง</td>
+                <td class="pkt-center">1 กระทง</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมครก</td>
+                <td class="pkt-center">1 คู่</td>
+                <td class="pkt-right">92<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีน</td>
+                <td class="pkt-center">1 ทัพพี</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีนแกงเขียวหวานไก่</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">594<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีนซาวน้ำ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">320<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีนน้ำเงี้ยว</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">243<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีนน้ำพริก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">228<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีนน้ำยา</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">332<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีนน้ำยาปักษ์ใต้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">146<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมจีบหมู</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">32<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมตาล</td>
+                <td class="pkt-center">1 กระทง</td>
+                <td class="pkt-right">58<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมถั่วแปบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">14<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมเทียน</td>
+                <td class="pkt-center">1 ห่อ</td>
+                <td class="pkt-right">103<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมบ้าบิ่น</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">130<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมเบื้องไทยไส้เค็ม</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">50<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมเบื้องไทยไส้หวาน</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมเปียกปูน</td>
+                <td class="pkt-center">1 จานเล็ก</td>
+                <td class="pkt-right">195<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมผิง</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">5<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมฝักบัว</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">70<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมเล็บมือนาง</td>
+                <td class="pkt-center">1 จานเล็ก</td>
+                <td class="pkt-right">275<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมหน้านวล</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">22<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมหัวผักกาดผัด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">560<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมหัวผักกาดผัดใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">630<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวกะเพราเนื้อ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">622<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวกุ้งทอดกระเทียม</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">495<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเกรียบกุ้ง</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">37<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเกรียบปากหม้อ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">26<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวแกงกะหรี่ไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">389<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวแกงเผ็ดไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">485<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวไก่อบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">490<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวขาหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">690<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวไข่เจียว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">445<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวคลุกกะปิ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">410<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวแช่</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">350<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวซอยไก่</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">395<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวซอยหมู</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">395<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวต้ม (ข้าวกล้อง)</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวต้ม (ข้าวขาว)</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวต้มทรงเครื่อง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวต้มปลา</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">325<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวต้มมัด</td>
+                <td class="pkt-center">1 มัด</td>
+                <td class="pkt-right">285<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวตังหน้าตั้ง</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวตังหมูหยอง</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวแตนราดน้ำตาล</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">150<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวปุ้น (ส้มตำ-ขนมจีน)</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">180<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดกะเพราหมูกรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">650<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดกะเพรากุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">540<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดกะเพราไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">554<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดกะเพราไก่ไข่ดาว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">630<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดกะเพราหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">580<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดกุ้งใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">595<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดกุนเชียง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">590<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดแกงเขียวหวานไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">630<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดคะน้าหมูกรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">670<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดต้มยำทะเลแห้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">400<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดน้ำพริกกุ้งสด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">460<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดน้ำพริกเผาหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">665<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดน้ำพริกลงเรือ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">605<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดปลาเค็ม</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">405<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดปลาหมึกน้ำพริกเผา</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">535<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดปูใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">610<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดผักกระเฉดหมูกรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">600<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดมันกุ้งใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">575<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดรวมมิตร (น้ำมันน้อย)</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดสับปะรด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">335<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดไส้กรอก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">520<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดหนำเลี้ยบหมูใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">370<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดหมูน้ำพริกเผา</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">665<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดหมูใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">557<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดแหนม</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">610<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวผัดอเมริกัน</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">790<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวพะแนงเนื้อ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">457<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวโพดต้ม</td>
+                <td class="pkt-center">1 ฝัก</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวมันไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">596<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวมันไก่ทอด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">695<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเม่าทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">209<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวยำปักษ์ใต้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">248<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวราดแกงเขียวหวานไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">483<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวราดผัดผักบุ้ง ไข่ดาว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">410<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวราดผัดผักใส่หมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">370<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวราดหน้าไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">400<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวสตูไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">465<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวสวย</td>
+                <td class="pkt-center">1 ทัพพี</td>
+                <td class="pkt-right">68<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวสวย (ข้าวกล้อง)</td>
+                <td class="pkt-center">1 ทัพพี</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวสวย (ข้าวขาว)</td>
+                <td class="pkt-center">1 ทัพพี</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวหน้ากุ้งผัดพริกสด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">540<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวหน้าเป็ด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">495<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวหมกไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">534<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวหมูแดง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">541<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวหมูทอด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">416<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวหมูทอดกระเทียม</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">525<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวหมูอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">389<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวกะทิทุเรียน</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">225<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวดำ</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">205<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวตัด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวนึ่ง</td>
+                <td class="pkt-center">1 ทัพพี</td>
+                <td class="pkt-right">160<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวมูนกะทิ</td>
+                <td class="pkt-center">1 จานเล็ก</td>
+                <td class="pkt-right">197<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวหน้าสังขยา</td>
+                <td class="pkt-center">1 จานเล็ก</td>
+                <td class="pkt-right">223<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวหมูทอด</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">440<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวหมูสวรรค์</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">480<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวอบเผือก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">385<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่เค็ม</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">75<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่เจียว</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">215<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ดาว</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">215<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ดาวทรงเครื่อง</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ต้ม</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">73<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ตุ๋น</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">75<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ตุ๋นทรงเครื่อง</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">159<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่นกกระทา</td>
+                <td class="pkt-center">1 จานเล็ก</td>
+                <td class="pkt-right">191<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่พะโล้</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">180<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ยัดไส้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">310<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ลวก</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">75<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่ลูกเขย</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">205<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไข่หงส์</td>
+                <td class="pkt-center">1 ใบ</td>
+                <td class="pkt-right">58<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ครองแครงกรอบเค็ม</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">19<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ครัวซอง</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ครีมซุปไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">160<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คอหมูย่าง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คะน้าหมูกรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">420<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เครื่องในไก่ผัดขิง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แคนตาลูป</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แคบหมู มีมัน</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">13<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แคบหมู ไร้มัน</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">10<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โครงไก่ทอด</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">656<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เงาะ</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">12<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แจ่วบอง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">25<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โจ๊กใส่ไข่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โจ๊กหมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">160<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โจ๊กหมูตับ ใส่ไข่ลวก</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เฉาก๊วย</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ชมพู่</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">16<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เชอร์รี</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">15<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ซาลาเปาทอด</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">157<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ซาลาเปาไส้หมู</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">202<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ซาหริ่ม</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">217<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ซ่าหริ่ม</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">275<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ซุปข้าวโพด</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">140<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ซุปผัก (ใส)</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">15<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ซุปหน่อไม้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">40<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มกะทิสายบัวปลาทูนึ่ง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">225<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มข่าไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มโคล้งไก่ย่าง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">115<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มโคล้งปลากรอบ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มจับฉ่าย</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">15<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มจืดเลือดหมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มตือฮวน</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">160<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มผักกาดดองซี่โครงหมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำกุ้ง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">65<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำไก่ใส่เห็ด</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำปลากระป๋อง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">55<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำปลากะพง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำปลาทู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">10<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำปลาหมึก</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">9<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มยำเห็ดสด</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">30<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มส้มปลาทู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">130<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ต้มหัวผักกาดขาวซี่โครงหมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ตะโก้แห้ว</td>
+                <td class="pkt-center">1 กระทง</td>
+                <td class="pkt-right">78<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ตับไก่ปิ้ง</td>
+                <td class="pkt-center">1 ไม้</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เต้าส่วน</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">215<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เต้าหู้แข็ง</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เต้าหู้ไข่</td>
+                <td class="pkt-center">1 หลอด</td>
+                <td class="pkt-right">70<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เต้าหู้ทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">57<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เต้าหู้นมสด</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">150<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เต้าฮวยน้ำขิง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">130<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แตงไทย</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แตงโม</td>
+                <td class="pkt-center">1 กิโลกรัม</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ถั่วทอด</td>
+                <td class="pkt-center">1 แพ</td>
+                <td class="pkt-right">82<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ถั่วลิสงทอด</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">62<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทองม้วน</td>
+                <td class="pkt-center">1 อัน</td>
+                <td class="pkt-right">35<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทอดมันกุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">255<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทอดมันปลากราย</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">37<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทับทิมกรอบ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทุเรียนสด</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">59<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทุเรียนทอดกรอบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">9<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เทมปุระ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">77<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>นมถั่วเหลือง (ไม่มีน้ำตาล)</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">55<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น่องไก่ทอด</td>
+                <td class="pkt-center">1 น่อง</td>
+                <td class="pkt-right">345<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น่องไก่ย่าง</td>
+                <td class="pkt-center">1 น่อง</td>
+                <td class="pkt-right">97<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้อยหน่า</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">61<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำกระเจี๊ยบ</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำโค้ก, น้ำเป๊ปซี่</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำปลามะนาว</td>
+                <td class="pkt-center">1 ตัวเล็ก</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกกะปิผักสด</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">28<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกกุ้งเผา</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกปลาป่น</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">35<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกมะขามเปียก</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">55<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกมะขามสด</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกมะม่วง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกลงเรือ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">195<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกหนุ่ม</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">18<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำพริกอ่อง</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำมะเขือเทศ</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">48<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำมะตูม</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำมะนาว</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำมะพร้าว</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำลำไย</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำส้มคั้น</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">160<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำสับปะรด</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">125<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำองุ่น</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">112<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำอ้อย</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เนื้อไก่ชุบแป้งทอด</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">71<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เนื้อน้ำตก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เนื้อผัดหวาน</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">590<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บรั่นดี</td>
+                <td class="pkt-center">1 cc</td>
+                <td class="pkt-right">2<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะจ่าง</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่กรอบราดหน้า</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">515<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่กรอบราดหน้าไก่หน่อไม้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">660<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่กรอบราดหน้ารวมมิตร</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">690<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่กึ่งสำเร็จรูป</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">253<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่กึ่งสำเร็จรูปผัดกะเพราหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">540<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่กึ่งสำเร็จรูปผัดขี้เมา</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">530<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่เกี๊ยวเป็ดย่าง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">415<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่น้ำน่องไก่</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">375<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่น้ำเกี๊ยวหมูแดง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">305<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่น้ำต้มยำหมู</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่น้ำน่องไก่</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">375<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่น้ำเป็ด</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">370<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่น้ำหมูต้มยำ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่หมูแดง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">231<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บะหมี่แห้งหมูแดง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">345<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บัวลอย</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">223<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บัวลอยเผือก</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บาร์บีคิวซี่โครงหมูข้าวคลุกเนย</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">340<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เบียร์ไทย</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">148<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลากะพงนึ่งมะนาว</td>
+                <td class="pkt-center">1 ชิ้นกลาง</td>
+                <td class="pkt-right">155<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาช่อนทอด</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">1840<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาช่อนอบเกลือ</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">220<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาชุบขนมปังทอด + สลัดผัก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">595<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาซาบะย่าง</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">220<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาแซลมอนย่าง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">260<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาทอดสามรส</td>
+                <td class="pkt-center">1 ตัวกลาง</td>
+                <td class="pkt-right">470<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาทูทอด</td>
+                <td class="pkt-center">1 ตัวกลาง</td>
+                <td class="pkt-right">280<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลานึ่ง</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">156<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาเผา</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">156<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาราดซอสมะนาวมันฝรั่งทอด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">560<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาราดพริก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">300<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาร้าทรงเครื่อง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">155<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาร้าสับ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">35<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาเล็กปลาน้อยทอดกรอบ</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาสลิดทอด</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">190<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาหมึกชุปแป้งทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">49<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาหมึกนึ่งมะนาว</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">75<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาหมึกผัดฉ่า</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">260<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาหมึกย่าง</td>
+                <td class="pkt-center">1 ไม้</td>
+                <td class="pkt-right">37<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปลาอินทรีเค็มทอด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">115<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เปาะเปี๊ยะทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">158<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปาท่องโก๋</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">124<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปีกไก่ทอด</td>
+                <td class="pkt-center">1 ชิ้นกลาง</td>
+                <td class="pkt-right">107<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปีกไก่ยัดไส้ทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">103<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ปีกไก่อบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">169<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เป็ดตุ๋นมะนาวดอง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เป็ดพะโล้</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดกะหล่ำปลีหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดกุ้งสะตอหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดกุ้งหน่อไม้ฝรั่ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดไข่หน่อไม้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดคะน้าปลาเค็ม</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดไชโป๊ใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">125<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดซีอิ๊วเส้นใหญ่หมูใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">679<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดดอกกะหล่ำกุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดดอกกุยช่ายตับ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดถั่วงอกเต้าหู้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">155<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดถั่วลันเตากุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">190<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดไทยกุ้งสด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">486<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดไทยกุ้งสดใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">545<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดไทยไร้เส้น</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">182<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดไทยวุ้นเส้นกุ้งสด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">520<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดไทยห่อไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">565<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดบรอกโคลีกุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดบวบใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดเปรี้ยวหวานไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">215<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดผักกระเฉดน้ำมันหอย</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">185<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดผักกาดขาวหมูวุ้นเส้น</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดผักกาดดองใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">205<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดผักคะน้าน้ำมันหอย</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดผักบุ้ง (ไม่ใส่น้ำมัน)</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">40<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดผักบุ้งไฟแดง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดผักรวมหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดเผ็ดปลาดุก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดเผ็ดปลาทอดกรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">290<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดเผ็ดมะเขือหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดพริกแกงหมูหน่อไม้</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดพริกขิงกุ้งกับถั่วฝักยาว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">245<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดพริกขิงหมูถั่วฝักยาว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">265<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดฟักทองใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">255<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดมะเขือยาวหมูสับ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดมักกะโรนีกุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">420<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดมักกะโรนีหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">514<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดยอดมะระน้ำมันหอย</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">185<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดวุ้นเส้นใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">265<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ผัดหมี่ซั่ว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">395<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เผือกทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">99<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ฝรั่ง</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">174<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ฝอยทอง</td>
+                <td class="pkt-center">1 แพ</td>
+                <td class="pkt-right">146<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เฝอ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พอร์คชอปทอดผักผัดเนย</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">545<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พะแนงไก่</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พะโล้</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พุทรา</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ฟักตุ๋นไก่มะนาวดอง</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">125<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ฟักทองแกงบวด</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ฟักทองแกงบวด</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">185<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะกอกฝรั่ง</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะขามหวาน</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะปรางสุก</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะเฟือง</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะไฟ</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะม่วงเขียวเสวย</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะม่วงดิบ</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะม่วงน้ำดอกไม้</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">15<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะม่วงสุก</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">98<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะม่วงอกร่องสุก</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">15<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะยม</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะละกอ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">8<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มักกะโรนีขี้เมาไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">520<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มักกะโรนีผัดกุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">420<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มังคุด</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">13<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มันแกงบวด</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">184<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มันทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">124<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มั่นฝรั่งทอด (เฟรนช์ฟรายส์)</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เม็ดขนุน (ขนมไทย)</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">35<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เมล็ดมะม่วงหิมพานต์ทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">28<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เมี่ยงก๋วยเตี๋ยว</td>
+                <td class="pkt-center">1 คำ</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เมี่ยงคำ</td>
+                <td class="pkt-center">1 คำ</td>
+                <td class="pkt-right">30<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แม่โขง</td>
+                <td class="pkt-center">1 cc</td>
+                <td class="pkt-right">1<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยากิโซบะ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">400<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำกุนเชียง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">220<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำขนมจีน</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">220<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำไข่ต้ม</td>
+                <td class="pkt-center">1 ฟอง</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำไข่ต้มทรงเครื่อง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">188<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำถั่วพู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">185<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำเนื้อย่าง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำปลากระป๋อง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">55<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำปลาดุกฟู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">275<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำปลาหมึกย่าง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">99<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำผักกระเฉด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">115<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำผักกาดดอง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">30<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำผักบุ้งทอดกรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">310<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำมะเขือยาว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">35<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำมะม่วงทะเล</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">136<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำมาม่า</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">215<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำแมงกะพรุน</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำรวมมิตรทะเล</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">132<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำวุ้นเส้น</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำไส้กรอก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำหนังหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">220<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำหมูย่าง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ยำหอยแมลงภู่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เย็นตาโฟ</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">290<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ระกำ</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">8<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ราดหน้าบะหมี่กรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">515<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ราดหน้าบะหมี่กรอบไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">660<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ราดหน้าปลากะพง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">435<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ราดหน้าเส้นใหญ่หมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">405<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ราดหน้าหมูหมี่กรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">690<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>รูทเบียร์</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โรตี ใส่นมข้นและน้ำตาล</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">192<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โรตีแกงเนื้อ, หมู</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">675<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลองกอง</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">6<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลอดช่องน้ำกะทิ</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลอดช่องสิงคโปร์</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">215<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ละมุด</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลางสาด</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">6<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลาบไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">125<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลาบเนื้อ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">119<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลาบปลา</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">94<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลาบหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">119<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลำไย</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">8<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลำไยแห้ง</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">9<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลิ้นจี่</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">17<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกเกด</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกชิ้นไก่</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">6<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกชิ้นทอด</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">35<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกชิ้นเนื้อวัว</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">8<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกชิ้นปลา</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกชุบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">57<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกตาลอ่อน</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกพลับ</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>วอดก้า</td>
+                <td class="pkt-center">1 cc</td>
+                <td class="pkt-right">2<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>วิสกี้</td>
+                <td class="pkt-center">1 cc</td>
+                <td class="pkt-right">2<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>วุ้นเส้นต้มยำ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">245<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>วุ้นเส้นผัดไทยกุ้งสด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">520<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไวตามิลค์</td>
+                <td class="pkt-center">1 ขวด</td>
+                <td class="pkt-right">150<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไวน์เชอร์รี</td>
+                <td class="pkt-center">1 cc</td>
+                <td class="pkt-right">1<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สตรอว์เบอร์รี</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สเต๊กไก่ทอด + มันบด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">615<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สเต๊กปลาย่าง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">260<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สเต๊กหมู + ผักสลัด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">505<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สปาเกตตีกะเพรากุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">485<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สปาเกตตีไก่อบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">430<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มเขียวหวาน</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">32<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มเช้ง</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มตำ ไม่ใส่ถั่ว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มตำไทย ไม่ใส่ถั่ว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">55<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มตำปู ไม่ใส่ถั่ว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">35<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มตำปูไทย ไม่ใส่ถั่ว</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">118<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มแป้น</td>
+                <td class="pkt-center">1 กิโลกรัม</td>
+                <td class="pkt-right">340<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ส้มโอ</td>
+                <td class="pkt-center">1 กลีบ</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สละหวาน</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สลัดกุ้ง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">92<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สลัดกุ้งน้ำใส</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">92<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สลัดไก่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">97<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สลัดแขก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สลัดไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">123<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สลัดเนื้อสันในทอด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">490<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สลัดปลาทูน่า</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">122<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สับปะรด</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">8<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สัมปันนี</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">21<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สาคูไส้หมู</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">51<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สาลี่</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">116<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สาลี่หอม</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สุกี้กุ้ง ไม่ใส่วุ้นเส้น</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สุกี้ไก่ ไม่ใส่วุ้นเส้น</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สุกี้น้ำไก่</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">345<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สุกี้หมู ไม่ใส่วุ้นเส้น</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สุกี้แห้งทะเล</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">280<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เส้นก๋วยเตี๋ยวผัดขี้เมา</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">605<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เส้นจันท์ผัดปู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">575<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เส้นหมี่ลูกชิ้นน้ำใส</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">225<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เส้นหมี่ลูกชิ้นหมูแห้ง</td>
+                <td class="pkt-center">1 ชาม</td>
+                <td class="pkt-right">430<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เส้นใหญ่ผัดซีอิ๊วใส่ไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">520<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไส้กรอกเนื้อลูกวัวอบสลัดผัก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">465<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไส้กรอกอีสาน</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไส้อั่ว</td>
+                <td class="pkt-center">1 คำ</td>
+                <td class="pkt-right">60<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หน่อไม้ผัดไข่</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">200<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมี่กรอบราดหน้าหมู</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">690<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมี่กะทิ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">405<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมี่ซั่วผัด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">395<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูกรอบ</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">560<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูกะทะ</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">375<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูคลุกเกล็ดขนมปังทอดซอส</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">645<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูจุ่ม</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">375<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูทอดเนยสลัดน้ำใส</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">635<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูน้ำตก</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูบด</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">50<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูปิ้ง</td>
+                <td class="pkt-center">1 ไม้</td>
+                <td class="pkt-right">125<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูผัดขิง</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">275<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูแผ่น</td>
+                <td class="pkt-center">1 แผ่นกลาง</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูฝอย</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">68<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูยอชุบแป้งทอด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">125<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูย่างเกาหลี</td>
+                <td class="pkt-center">1 ชุด</td>
+                <td class="pkt-right">375<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูสะเต๊ะ</td>
+                <td class="pkt-center">1 ไม้</td>
+                <td class="pkt-right">115<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หมูหยอง</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">38<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หลนปูเค็ม</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">205<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หอยแมลงภู่ทอด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">605<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>หอยแมลงภู่อบหม้อดิน</td>
+                <td class="pkt-center">1 ตัว</td>
+                <td class="pkt-right">17<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เห็ดผัดน้ำมันหอย</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">185<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แหนมสด</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">175<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>อกไก่ย่าง</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>อกไก่อบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">169<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>องุ่น</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">16<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>องุ่นเปรี้ยว</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">3<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>องุ่นหวาน</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>อ้อยควั่น</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">12<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td><a href="/drug-pantoprazole" target="_blank">แอปเปิล</a></td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">42<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โอวัลติน</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">220<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ฮะเก๋า</td>
+                <td class="pkt-center">1 ลูกเล็ก</td>
+                <td class="pkt-right">115<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมถ้วย</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">133<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กระทงทองไส้ข้าวโพด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">72<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กระทงทองไส้ไก่</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">93<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กระยาสารท</td>
+                <td class="pkt-center">1 ชิ้นกลาง</td>
+                <td class="pkt-right">210<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>กล้วยคลุกมะพร้าว</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมชั้น</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">92<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมต้มขาว</td>
+                <td class="pkt-center">1 ลูก</td>
+                <td class="pkt-right">41<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปลากริมไข่เต่า</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังกระเทียม</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">85<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังขาไก่</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">65<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังปอนด์</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังมะพร้าว</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">235<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังสังขยา</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังอบกรอบ</td>
+                <td class="pkt-center">1 แผ่นเล็ก</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังไส้กรอก</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">130<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมปังไส้หมูหยอง</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">185<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมหม้อแกง</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">179<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมไหว้พระจันทร์ไส้ทุเรียนกวน</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">340<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ขนมไหว้พระจันทร์ไส้ลูกบัวไข่เค็ม</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">375<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวกุ้งทอดกระเทียมพริกไทย</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">495<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวหน้ากุ้ง</td>
+                <td class="pkt-center">1 ห่อ</td>
+                <td class="pkt-right">179<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ข้าวเหนียวสังขยา</td>
+                <td class="pkt-center">1 ห่อ</td>
+                <td class="pkt-right">370<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ครีมเทียม</td>
+                <td class="pkt-center">1 ช้อนชา</td>
+                <td class="pkt-right">45<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ครีมโรล</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">360<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คอร์นเฟลก</td>
+                <td class="pkt-center">1 ถ้วยตวง</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คุ้กกี้ข้าวโอ๊ต</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">75<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คุ้กกี้ชาเขียว</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">75<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คุ้กกี้ช็อกโกแลตชิป</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">215<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คุ้กกี้สิงคโปร์</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">95<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คุ้กกี้เนย</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>คุ้กกี้ไส้สับปะรด</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">190<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ชาดำเย็น</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ชามะนาว</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ชาร้อน</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">55<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ชาเย็น</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ช็อกโกแลตร้อน</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ถั่วลิสงแผ่นทอด</td>
+                <td class="pkt-center">1 แผ่น</td>
+                <td class="pkt-right">150<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ถั่วลิสงต้ม</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">45<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ถั่วเขียวต้มน้ำตาล</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">160<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทองหยิบ</td>
+                <td class="pkt-center">1 ดอก</td>
+                <td class="pkt-right">105<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ทุเรียนกวน</td>
+                <td class="pkt-center">1 ช้อนโต๊ะ</td>
+                <td class="pkt-right">115<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำนมข้าวโพด</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำตาลทราย</td>
+                <td class="pkt-center">1 ช้อนชา</td>
+                <td class="pkt-right">20<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำฝรั่ง</td>
+                <td class="pkt-center">1 กล่อง</td>
+                <td class="pkt-right">100<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>บราวนี่</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">340<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำใบเตย</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>น้ำใบบัวบก</td>
+                <td class="pkt-center">1 แก้ว</td>
+                <td class="pkt-right">120<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พายกรอบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">118<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พายชีสบูลเบอร์รี</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">350<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พายทูน่า</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">280<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พิซซ่าขอบไส้กรอกชีส</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">340<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พิซซ่าทะเล</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">335<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พิซซ่าฮาวายเอี้ยน</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">345<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>พิซซ่าไส้กรอก</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">290<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ฟักทองเชื่อม</td>
+                <td class="pkt-center">1 จาน</td>
+                <td class="pkt-right">167<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะกอกทรงเครื่อง</td>
+                <td class="pkt-center">1 ผล</td>
+                <td class="pkt-right">33<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะขามหวาน</td>
+                <td class="pkt-center">1 ฝัก</td>
+                <td class="pkt-right">30<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มะม่วงอกร่องสุก</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">15<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มันฝรั่งแผ่น</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">13<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มันเทศเชื่อม</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มันแกงบวด</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">184<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>มาการีน</td>
+                <td class="pkt-center">1 ช้อนชา</td>
+                <td class="pkt-right">45<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>รวมมิตร</td>
+                <td class="pkt-center">1 ถ้วยเล็ก</td>
+                <td class="pkt-right">230<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกชิ้นปิ้ง</td>
+                <td class="pkt-center">1 ไม้</td>
+                <td class="pkt-right">165<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกตาลลอยแก้ว</td>
+                <td class="pkt-center">1 ถ้วย</td>
+                <td class="pkt-right">180<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ลูกเกด</td>
+                <td class="pkt-center">1 เม็ด</td>
+                <td class="pkt-right">4<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>วุ้นมะพร้าวอ่อน</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">80<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สังขยา</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">204<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สังขยาฟักทอง</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">288<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>สังขยาเผือก</td>
+                <td class="pkt-center">1 ชิ้นเล็ก</td>
+                <td class="pkt-right">222<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เกี๊ยวกรอบ</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">78<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เค้กกล้วยหอม</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">370<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เค้กช็อกโกแลต</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">275<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เค้กเนย</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">255<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เค้กใบเตย</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">250<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>เต้าหู้เหลือง</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">90<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แซนด์วิชแฮมชีส</td>
+                <td class="pkt-center">1 คู่</td>
+                <td class="pkt-right">290<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แซนด์วิชทูน่า</td>
+                <td class="pkt-center">1 คู่</td>
+                <td class="pkt-right">180<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แซนด์วิชไก่</td>
+                <td class="pkt-center">1 คู่</td>
+                <td class="pkt-right">240<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แยมโรล</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">310<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แฮมเบอร์เกอร์ไก่ชีส</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">280<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>แฮมเบอร์เกอร์หมู</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">245<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โดนัท</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">270<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>โรตีสายไหม</td>
+                <td class="pkt-center">1 ชิ้น</td>
+                <td class="pkt-right">145<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไอศกรีมกะทิ</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">108<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไอศกรีมกาแฟ</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">142<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไอศกรีมช็อกโกแลต</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไอศกรีมวานิลลา</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">140<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไอศกรีมสตรอว์เบอร์รี</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">110<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+              <tr class="calorie-tr">
+                <td>ไอศกรีมเรซิน</td>
+                <td class="pkt-center">1 ก้อน</td>
+                <td class="pkt-right">264<span class="uk-hidden-small"> กิโลแคลอรี่</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- / Footer -->
+
+
+  <!-- jQuery library -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+  <!-- Date Picker -->
+  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+
+  <!-- Custom js -->
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
